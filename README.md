@@ -1,7 +1,8 @@
-# OpenClaw Granular Memory
+# OpenClaw Memory Garden
 
-A thoughtfully-designed memory system for [OpenClaw](https://open-claw.bot) AI
-agents, emphasizing **structure**, **efficiency**, and **maintainability**.
+A cultivated memory system for [OpenClaw](https://open-claw.bot) AI agents —
+where memories grow into knowledge through **typing**, **importance weighting**,
+and **LLM-powered gardening**.
 
 > **Status:** Experimental but functional. We're using this in production
 > alongside OpenClaw's built-in memory and would love feedback on the approach.
@@ -39,10 +40,10 @@ Read the full rationale in [docs/DESIGN.md](docs/DESIGN.md).
 
 ```bash
 # Clone the plugin
-git clone https://github.com/jackyma-info/openclaw-memory-granular.git
+git clone https://github.com/nickyma/openclaw-memory-garden.git
 
 # Install in OpenClaw
-openclaw plugins install -l /path/to/openclaw-memory-granular
+openclaw plugins install -l /path/to/openclaw-memory-garden
 
 # Restart gateway
 openclaw gateway restart
@@ -272,7 +273,7 @@ see [LanceDB's troubleshooting guide](https://lancedb.github.io/lancedb/).
 ┌─────────────────────────────────────────────────────────┐
 │                  OpenClaw Gateway                        │
 ├─────────────────────────────────────────────────────────┤
-│  openclaw-memory-granular                                │
+│  openclaw-memory-garden                                  │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
 │  │ Agent Tools │  │ CLI Commands│  │ Auto-capture    │  │
 │  │ xmem_*      │  │ openclaw    │  │ hook            │  │

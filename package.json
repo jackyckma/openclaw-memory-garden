@@ -1,13 +1,13 @@
 {
-  "name": "openclaw-memory-granular",
+  "name": "openclaw-memory-garden",
   "version": "0.1.0",
-  "description": "Granular memory system for OpenClaw with scopes, kinds, and importance scoring",
+  "description": "A cultivated memory system for OpenClaw — typed, importance-weighted, and designed for LLM gardening",
   "type": "module",
   "license": "MIT",
   "author": "Jacky Ma",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyma-info/openclaw-memory-granular"
+    "url": "https://github.com/nickyma/openclaw-memory-garden"
   },
   "keywords": [
     "openclaw",
@@ -15,7 +15,9 @@
     "lancedb",
     "ai-agent",
     "vector-search",
-    "embeddings"
+    "embeddings",
+    "knowledge-management",
+    "gardening"
   ],
   "openclaw": {
     "extensions": [
