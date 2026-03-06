@@ -1,7 +1,7 @@
 {
-  "id": "experimental-memory",
-  "name": "Experimental Memory",
-  "description": "Experimental granular memory system with scoped vector search",
+  "id": "memory-garden",
+  "name": "Memory Garden",
+  "description": "A cultivated memory system — typed, importance-weighted, and designed for LLM gardening",
   "uiHints": {
     "embedding.apiKey": {
       "label": "OpenAI API Key",
