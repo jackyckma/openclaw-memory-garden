@@ -1,0 +1,82 @@
+{
+  "id": "experimental-memory",
+  "name": "Experimental Memory",
+  "description": "Experimental granular memory system with scoped vector search",
+  "uiHints": {
+    "embedding.apiKey": {
+      "label": "OpenAI API Key",
+      "sensitive": true,
+      "placeholder": "sk-proj-...",
+      "help": "API key for OpenAI embeddings (or use ${OPENAI_API_KEY})"
+    },
+    "embedding.model": {
+      "label": "Embedding Model",
+      "placeholder": "text-embedding-3-small",
+      "help": "OpenAI embedding model to use"
+    },
+    "dbPath": {
+      "label": "Database Path",
+      "placeholder": "~/.openclaw/memory/experimental",
+      "advanced": true,
+      "help": "Path to the LanceDB database directory"
+    },
+    "autoCapture.enabled": {
+      "label": "Auto-Capture Conversations",
+      "help": "Automatically capture conversations as chat_log entries for later extraction"
+    },
+    "autoCapture.maxChars": {
+      "label": "Max Capture Size",
+      "placeholder": "10000",
+      "advanced": true,
+      "help": "Maximum characters per conversation to capture"
+    },
+    "autoCapture.retentionDays": {
+      "label": "Retention Days",
+      "placeholder": "30",
+      "advanced": true,
+      "help": "Days to keep raw chat_log entries before cleanup"
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "embedding": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "apiKey": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string",
+            "enum": ["text-embedding-3-small", "text-embedding-3-large"]
+          }
+        },
+        "required": ["apiKey"]
+      },
+      "dbPath": {
+        "type": "string"
+      },
+      "autoCapture": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "default": false
+          },
+          "maxChars": {
+            "type": "number",
+            "default": 10000
+          },
+          "retentionDays": {
+            "type": "number",
+            "default": 30
+          }
+        }
+      }
+    },
+    "required": ["embedding"]
+  }
+}

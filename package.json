@@ -1,0 +1,37 @@
+{
+  "name": "openclaw-memory-granular",
+  "version": "0.1.0",
+  "description": "Granular memory system for OpenClaw with scopes, kinds, and importance scoring",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jacky Ma",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackyma-info/openclaw-memory-granular"
+  },
+  "keywords": [
+    "openclaw",
+    "memory",
+    "lancedb",
+    "ai-agent",
+    "vector-search",
+    "embeddings"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "src/",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@lancedb/lancedb": "^0.26.2",
+    "@sinclair/typebox": "^0.34.48",
+    "openai": "^6.25.0"
+  }
+}

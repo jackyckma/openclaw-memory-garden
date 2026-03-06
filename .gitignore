@@ -1,0 +1,22 @@
+node_modules/
+*.js
+*.d.ts
+*.map
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Package manager locks (optional - uncomment if you want to commit)
+# package-lock.json
+
+# Development docs (not for public release)
+DEVELOPMENT.md
